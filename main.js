@@ -4,6 +4,7 @@ var quoteSection = document.querySelector(".hidden-message");
 var randomMessage = document.querySelector(".random-message");
 var messageReturned = document.querySelector("p");
 var radioButtons = document.getElementsByName("radioBtn");
+var clearButton = document.querySelector(".clearBtn");
 var affirmations = [
   "I forgive myself and set myself free.",
   "I believe I can be all that I want to be.",
@@ -38,6 +39,7 @@ var mantras = [
 ]
 
 receiveButton.addEventListener("click", randomizeMessage);
+clearButton.addEventListener("click", clearMessage)
 
 function getRandomMessage(array) {
   return array[Math.floor(Math.random() * array.length)];
@@ -48,6 +50,8 @@ function randomizeMessage() {
     displayMessage(getRandomMessage(affirmations));
   } else if(document.getElementById("mantra").checked) {
     displayMessage(getRandomMessage(mantras));
+ } else if(!document.getElementsByName("radioBtn").checked) {
+   window.alert("You need to select a message option!")
  }
 }
 
@@ -57,4 +61,9 @@ function displayMessage(message) {
   quoteSection.classList.remove("hidden");
   messageReturned.innerText = message;
 
+}
+
+function clearMessage() {
+  quoteSection.classList.add("hidden");
+  buddhaSection.classList.remove("hidden");
 }
