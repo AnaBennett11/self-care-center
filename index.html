@@ -12,21 +12,21 @@
       <h2>Which type of message?</h2>
       <form>
         <div class="bubbles">
-          <input type="radio" id="affirmation" value="affirmation">
+          <input type="radio" name = "radioBtn" id="affirmation" value="affirmation">
           <label for="affirmation"><em>affirmation</em></label><br>
-          <input type="radio" id="mantra" value="mantra">
+          <input type="radio" name = "radioBtn" id="mantra" value="mantra">
           <label for="mantra"><em>mantra</em></label><br><br>
         </div>
         <div>
-          <button type="button">Receive Message</button>
+          <button type="receive-button">Receive Message</button>
         </div>
       </form>
       <section class="container">
         <img class="meditation" src="./assets/meditate.svg" alt="yellow buddha">
       </section>
-      <!-- <section class="hidden-message hidden">
-        <p>You've got to be brave, for the world is still catching up.</p>
-      </section> -->
+      <section class="hidden-message hidden">
+        <p class = "random-message">You've got to be brave, for the world is still catching up.</p>
+      </section>
     </main>
     <script type="text/javascript" src="main.js"></script>
   </body>

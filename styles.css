@@ -38,7 +38,7 @@ button {
   padding-bottom: 0.45rem;
   border-radius: 0.625rem;
 }
-/* p {
+p {
   background-color: white;
   padding-left: 3.5rem;
   padding-right: 3.5rem;
@@ -47,7 +47,7 @@ button {
   border-radius: 0.625rem;
   width: 50rem;
   height: 7.4rem;
-} */
+}
 
 img{
   height: 80px;
@@ -61,6 +61,9 @@ main {
   align-content: space-evenly;
   align-items: center;
 
+}
+.hidden {
+  display: none!important;
 }
 
 .container {
