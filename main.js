@@ -3,7 +3,6 @@ var buddhaSection = document.querySelector(".container");
 var quoteSection = document.querySelector(".hidden-message");
 var randomMessage = document.querySelector(".random-message");
 var messageReturned = document.querySelector("p");
-var radioButtons = document.getElementsByName("radioBtn");
 var clearButton = document.querySelector(".clearBtn");
 var affirmations = [
   "I forgive myself and set myself free.",
@@ -37,7 +36,6 @@ var mantras = [
   "Onward and upward.",
   "I am the sky, the rest is weather.",
 ]
-
 receiveButton.addEventListener("click", randomizeMessage);
 clearButton.addEventListener("click", clearMessage)
 
